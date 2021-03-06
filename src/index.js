@@ -1,17 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./App.css";
+import SearchBox from "./SearchBox";
+import SubmitBox from "./SubmitBox";
+import CurrentLocationButton from "./CurrentLocationButton";
+import CurrentLocation from "./CurrentLocation";
+import CurrentWeather from "./CurrentWeather";
+import OpenSourceCode from "./OpenSourceCode";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <body>
+      <div className="container">
+        <div className="weather-app-wrapper">
+          <div className="weather-app">
+            <div className="row">
+              <div className="col-4">
+                <SearchBox />
+              </div>
+              <div className="col-4">
+                <SubmitBox />
+              </div>
+              <div className="col-4">
+                <CurrentLocationButton />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6">
+                <CurrentLocation />
+              </div>
+              <div className="col-6">
+                <CurrentWeather />
+              </div>
+            </div>
+            <p>
+              <div className="row today" id="hour-forecasts"></div>
+            </p>
+            <p>
+              <div className="row days" id="daily-forecasts"></div>
+            </p>
+          </div>
+          <OpenSourceCode />
+        </div>
+      </div>
+    </body>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
