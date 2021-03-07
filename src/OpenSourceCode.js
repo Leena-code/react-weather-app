@@ -5,14 +5,14 @@ export default function OpenSourceCode() {
   return (
     <div>
       <small>
+        This project is coded by Natalie Lee and is {" "}
         <a
-          href="https://github.com/Leena-code/weather-app"
+          href="https://github.com/Leena-code/react-weather-app"
           target="_blank"
           rel="noreferrer"
         >
-          Open-source code
+          open-sourced on GitHub
         </a>
-        by Natalie Lee
       </small>
     </div>
   );
