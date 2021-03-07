@@ -19,6 +19,10 @@ ul {
   line-height: 3;
 }
 
+a {
+  text-decoration: none;
+}
+
 .weather-app-wrapper {
   max-width: 800px;
   margin: 20px auto 40px;
@@ -32,17 +36,6 @@ ul {
   max-width: 800px;
   background-image: url(https://images.creativemarket.com/0.1.0/ps/5272950/910/628/m2/fpnw/wm0/sunset-colors-%281%29-.jpg?1540691231&s=40e82e11ce05541d9382dd5c8a8b9fa1);
   background-size: 1600px;
-}
-
-form .form-control:focus {
-  border-color: #0f3057;
-  box-shadow: none;
-}
-
-.form-control {
-  border: none;
-  border: 1.5px solid #0f3057;
-  border-radius: 4px;
 }
 
 .today {

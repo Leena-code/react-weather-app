@@ -1,10 +1,6 @@
 import React from "react";
-import SearchBox from "./SearchBox";
-import SubmitBox from "./SubmitBox";
-import CurrentLocationButton from "./CurrentLocationButton";
-import CurrentLocation from "./CurrentLocation";
-import CurrentWeather from "./CurrentWeather";
-import OpenSourceCode from "./OpenSourceCode";
+import Search from "./Search";
+import Weather from "./Weather";
 
 import "./App.css";
 
@@ -14,25 +10,8 @@ export default function App() {
       <div className="container">
         <div className="weather-app-wrapper">
           <div className="weather-app">
-            <div className="row">
-              <div className="col-4">
-                <SearchBox />
-              </div>
-              <div className="col-4">
-                <SubmitBox />
-              </div>
-              <div className="col-4">
-                <CurrentLocationButton />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <CurrentLocation />
-              </div>
-              <div className="col-6">
-                <CurrentWeather />
-              </div>
-            </div>
+            < Search />
+            <Weather />
             <p>
               <div className="row today" id="hour-forecasts"></div>
             </p>
@@ -41,7 +20,16 @@ export default function App() {
             </p>
           </div>
           <footer>
-              <OpenSourceCode />
+              <small>
+                This project is coded by Natalie Lee and is {" "}
+                  <a
+                    href="https://github.com/Leena-code/react-weather-app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    open-sourced on GitHub
+                  </a>
+              </small>
           </footer>
         </div>
       </div>
