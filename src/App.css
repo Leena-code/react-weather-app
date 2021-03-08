@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-body {
-  font-family: poppins;
-}
-
 h1,
 h2,
 h3 {
@@ -21,9 +17,15 @@ ul {
 
 a {
   text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: lightcoral;
 }
 
 .weather-app-wrapper {
+  font-family: poppins;
   max-width: 800px;
   margin: 20px auto 40px;
 }
