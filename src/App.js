@@ -1,6 +1,5 @@
 import React from "react";
-import Search from "./Search";
-import Weather from "./Weather";
+import SearchWeather from "./SearchWeather";
 
 import "./App.css";
 
@@ -9,8 +8,7 @@ export default function App() {
       <div className="container">
         <div className="weather-app-wrapper">
           <div className="weather-app">
-            <Search />
-            <Weather />
+            <SearchWeather defaultCity="Zurich" />
           </div>
           <footer>
             <small>
