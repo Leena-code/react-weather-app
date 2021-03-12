@@ -8,14 +8,18 @@ export default function SearchWeather(props){
   const [weatherData, setWeatherData] = useState({ready: false});
 
   function handleResponse(response){
+    console.log(response.data);
     setWeatherData({
       ready:true,
       city: response.data.name,
+      country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
-      percipitation: 15,
+      feelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      sunrise: response.data.sys.sunrise *1000,
+      sunset: response.data.sys.sunset *1000,
       description: response.data.weather[0].description,
       iconUrl: `https://openweathermap.org/img/wn/04d@2x.png`
     });
@@ -37,10 +41,9 @@ export default function SearchWeather(props){
         <button className="current-location-button">Current Location</button>
         </div>
         <div className="weather">
-           <h1>{weatherData.city}</h1>
+           <h1>{weatherData.city}, {weatherData.country}</h1>
               <h2>
                   <FormattedDate date= {weatherData.date} />
-                  <div className="date">29. December 2020</div>
               </h2>
         
           <div className="row weather">
@@ -62,6 +65,15 @@ export default function SearchWeather(props){
               </li>
               <li>
                 Wind: {weatherData.wind} km/h
+              </li>
+              <li>
+                Feels like: {Math.round(weatherData.feelsLike)}°
+              </li>
+              <li>
+                Sunrise: {weatherData.sunrise}
+              </li>
+              <li>
+                Sunset: {weatherData.sunset}
               </li>
             </ul>
           </div>
