@@ -1,28 +1,29 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
     return (
-        <div className="weather">
+        <div className="weatherInfo">
+            <div className="row weather mt-3">
+                <div className="col-6 city">
            <h1>{props.data.city}, {props.data.country}</h1>
               <h2>
                   <FormattedDate date= {props.data.date} />
               </h2>
-        
-          <div className="row weather">
-          <div className="col-6">
-             <h3>
-                  <img
-                  src={props.data.iconUrl}
-                  alt={props.data.description}
-                  id="current-weather-icon"
-                  />
-                  <span className="temperature">{Math.round(props.data.temperature)}°</span>
-                  <div id="description">broken clouds</div>
-              </h3>
-          </div>
-          <div className="col-6">
+              </div>
+          <div className="col-6 weatherData">
+              <div className="clearfix">
+              <WeatherIcon code={props.data.icon} className="float-left"/>
+                 <span className="float-left">
+                 <span className="temperature">{Math.round(props.data.temperature)}</span>
+                 <span className="unit">°C</span>
+                 </span>
+                 <div className="weatherDescription">
+                 broken clouds
+                 </div>
+             </div>
             <ul>
               <li>
                 Humidity: {props.data.humidity} %
@@ -33,15 +34,17 @@ export default function WeatherInfo(props) {
               <li>
                 Feels like: {Math.round(props.data.feelsLike)}°
               </li>
-              <li>
-                Sunrise: {props.data.sunrise}
-              </li>
-              <li>
-                Sunset: {props.data.sunset}
-              </li>
-            </ul>
+              </ul>
+              </div>
           </div>
-          </div>
+              <div className="row sunTime">
+                  <div className="col-6">
+                      Sunrise: {props.data.sunrise}
+                  </div>
+                <div className="col-6">
+                      Sunset: {props.data.sunset}
+                  </div>
+              </div>    
       </div>
     );
 }

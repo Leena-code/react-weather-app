@@ -1,19 +1,66 @@
-.weather h1 {
+.weatherInfo h1 {
   font-size: 30px;
-  margin: 80px 0 20px 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-.weather h2 {
+.weatherInfo h2 {
   font-size: 20px;
   line-height: normal;
 }
 
-.weather h3 {
+.weatherInfo h3 {
   font-size: 30px;
-  margin: 60px 0 20px 0;
 }
 
-.temperature {
+.weatherInfo canvas {
+  display: inline-block;
+}
+
+.weatherInfo ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.weatherInfo li {
+  list-style: none;
+  color: #0f3057;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+.city {
+  border: 1px solid #0f3057;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+.weatherData {
+  border: 1px solid #0f3057;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+span.temperature {
   color: #ffe3de;
-  font-size: 50px;
+  font-size: 80px;
+  line-height: 64px;
+  margin-left: 10px;
+}
+
+.unit {
+  color: #ffe3de;
+  font-size: 25px;
+  position: relative;
+  top: -43px;
+  margin-left: 5px;
+}
+
+.weatherDescription {
+  color: #0f3057;
+  font-size: 20px;
+  font-weight: bolder;
 }

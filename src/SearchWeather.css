@@ -55,23 +55,3 @@
   border: 1px solid transparent;
   cursor: pointer;
 }
-
-.weather h1 {
-  font-size: 30px;
-  margin: 80px 0 20px 0;
-}
-
-.weather h2 {
-  font-size: 20px;
-  line-height: normal;
-}
-
-.weather h3 {
-  font-size: 30px;
-  margin: 60px 0 20px 0;
-}
-
-.temperature {
-  color: #ffe3de;
-  font-size: 50px;
-}

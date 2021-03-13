@@ -21,7 +21,7 @@ export default function SearchWeather(props){
       sunrise: response.data.sys.sunrise *1000,
       sunset: response.data.sys.sunset *1000,
       description: response.data.weather[0].description,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      iconUrl: response.data.weather[0].icon,
     });
   }
 
