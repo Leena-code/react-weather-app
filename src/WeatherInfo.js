@@ -32,17 +32,17 @@ export default function WeatherInfo(props) {
                 Wind: {props.data.wind} km/h
               </li>
               <li>
-                Feels like: {Math.round(props.data.feelsLike)}°
+                Feels like: {Math.round(props.data.feelsLike)}°C
               </li>
               </ul>
               </div>
           </div>
               <div className="row sunTime">
                   <div className="col-6">
-                      Sunrise: {props.data.sunrise}
+                      Sunrise: {new Date (props.data.sunrise * 1000).getHours()}:{new Date (props.data.sunrise * 1000).getMinutes()}
                   </div>
                 <div className="col-6">
-                      Sunset: {props.data.sunset}
+                      Sunset: {new Date (props.data.sunset * 1000).getHours()}:{new Date (props.data.sunset * 1000).getMinutes()}
                   </div>
               </div>    
       </div>

@@ -16,17 +16,14 @@ a:hover {
   color: lightcoral;
 }
 
-.weather-app-wrapper {
-  font-family: poppins;
-  max-width: 800px;
-  margin: 30px auto 40px;
-}
-
-.weather-app {
+.App {
   border: 1.5px solid #0f3057;
   border-radius: 10px;
   padding: 50px;
   max-width: 800px;
   background-color: #00ad9f;
   background-size: 1600px;
+  font-family: poppins;
+  max-width: 800px;
+  margin: 30px auto 40px;
 }

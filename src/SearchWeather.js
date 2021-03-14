@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 import "./SearchWeather.css";
 
@@ -18,8 +19,8 @@ export default function SearchWeather(props){
       feelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      sunrise: response.data.sys.sunrise *1000,
-      sunset: response.data.sys.sunset *1000,
+      sunrise: response.data.sys.sunrise,
+      sunset: response.data.sys.sunset,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
     });
@@ -58,6 +59,7 @@ export default function SearchWeather(props){
         <button className="current-location-button">Current Location</button>
         </div>
         <WeatherInfo data={weatherData}/>
+        <WeatherForecast city={weatherData.city}/>
     </div>   
   );
  } else{
