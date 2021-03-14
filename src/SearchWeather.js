@@ -45,8 +45,11 @@ export default function SearchWeather(props){
   if(weatherData.ready){
     return(
       <div>
-        <div className="Search">
+        <div className="row">
+          <div className="col-7">
         <form onSubmit={handleSubmit}>
+          <div className="row">
+          <div className="col-6">
           <input
             type="search"
             placeholder="Enter a city..."
@@ -54,9 +57,16 @@ export default function SearchWeather(props){
             autoComplete="off"
             onChange= {handleCityChange}
           />
+          </div>
+          <div className="col-3">
           <input type="submit" value="🔎" className="form-control submit-box" />
+          </div>
+          </div>
         </form>
+        </div>
+        <div className="col-4">
         <button className="current-location-button">Current Location</button>
+        </div>
         </div>
         <WeatherInfo data={weatherData}/>
         <WeatherForecast city={weatherData.city}/>

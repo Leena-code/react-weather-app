@@ -23,7 +23,10 @@ a:hover {
   max-width: 800px;
   background-color: #00ad9f;
   background-size: 1600px;
-  font-family: poppins;
+}
+
+.weather-app-wrapper {
+   font-family: poppins;
   max-width: 800px;
-  margin: 30px auto 40px;
+  margin: 20px auto 40px;
 }

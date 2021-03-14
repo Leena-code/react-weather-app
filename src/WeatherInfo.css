@@ -32,13 +32,11 @@
 }
 
 .city {
-  border: 1px solid #0f3057;
   margin-top: 30px;
   padding-left: 10px;
 }
 
 .weatherData {
-  border: 1px solid #0f3057;
   margin-top: 30px;
   padding-left: 10px;
   padding-top: 10px;
@@ -55,3 +53,6 @@
   font-weight: bolder;
 }
 
+.sunTime{
+  color: yellow;
+}

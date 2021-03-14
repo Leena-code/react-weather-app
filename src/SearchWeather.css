@@ -1,13 +1,10 @@
-.Search form {
-  display: inline;
+form {
   background-color: white;
   border: 1.5px solid #0f3057;
   border-radius: 4px;
-  padding: 5px 15px 5px 10px;
-  margin-left: 20px;
 }
 
-.Search form .form-control:focus {
+form .form-control:focus {
   outline: none;
 }
 
@@ -19,12 +16,12 @@
 
 .search-box {
   border: none;
-  padding-right: 140px;
 }
 
 .submit-box {
   background-color: white;
   border: none;
+  margin-left: 100px;
 }
 
 .submit-box:hover {
@@ -40,9 +37,8 @@
   border-radius: 4px;
   background-color: #0f3057;
   border: 1px solid transparent;
-  padding: 5px 15px;
-  margin-top: 10px;
-  margin-left: 160px;
+  padding: 10px 15px;
+  margin-left: 40px;
   font-size: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   text-decoration: none;
