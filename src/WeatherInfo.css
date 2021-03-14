@@ -44,23 +44,14 @@
   padding-top: 10px;
 }
 
-span.temperature {
-  color: #ffe3de;
-  font-size: 80px;
-  line-height: 64px;
-  margin-left: 10px;
+.WeatherTemperature{
+  display: inline-block;
 }
 
-.unit {
-  color: #ffe3de;
-  font-size: 25px;
-  position: relative;
-  top: -43px;
-  margin-left: 5px;
-}
 
 .weatherDescription {
   color: #0f3057;
   font-size: 20px;
   font-weight: bolder;
 }
+

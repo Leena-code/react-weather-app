@@ -1,0 +1,14 @@
+span.temperature {
+  color: #ffe3de;
+  font-size: 80px;
+  line-height: 64px;
+  margin-left: 10px;
+}
+
+.unit {
+  color: #ffe3de;
+  font-size: 25px;
+  position: relative;
+  top: -43px;
+  margin-left: 5px;
+}

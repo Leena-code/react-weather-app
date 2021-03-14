@@ -21,7 +21,7 @@ export default function SearchWeather(props){
       sunrise: response.data.sys.sunrise *1000,
       sunset: response.data.sys.sunset *1000,
       description: response.data.weather[0].description,
-      iconUrl: response.data.weather[0].icon,
+      icon: response.data.weather[0].icon,
     });
   }
 
