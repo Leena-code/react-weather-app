@@ -53,13 +53,13 @@ export default function SearchWeather(props){
           <input
             type="search"
             placeholder="Enter a city..."
-            className="form-control search-box"
+            className="form-control search-box shadow-none"
             autoComplete="off"
             onChange= {handleCityChange}
           />
           </div>
           <div className="col-3">
-          <input type="submit" value="🔎" className="form-control submit-box" />
+          <input type="submit" value="🔎" className="form-control submit-box shadow-none" />
           </div>
           </div>
         </form>
