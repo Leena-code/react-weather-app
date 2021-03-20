@@ -1,35 +1,108 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather";
+import { WiDaySunny } from "weather-icons-react";
+import { WiNightClear } from "weather-icons-react";
+import { WiDayCloudy } from "weather-icons-react";
+import { WiNightAltCloudy } from "weather-icons-react";
+import { WiCloud } from "weather-icons-react";
+import { WiCloudy } from "weather-icons-react";
+import { WiDayShowers} from "weather-icons-react";
+import { WiNightAltShowers } from "weather-icons-react";
+import { WiDayRain } from "weather-icons-react";
+import { WiNightAltRain } from "weather-icons-react";
+import { WiDayThunderstorm} from "weather-icons-react";
+import { WiNightAltThunderstorm} from "weather-icons-react";
+import { WiDaySnow} from "weather-icons-react";
+import { WiNightAltSnow} from "weather-icons-react";
+import { WiDayFog} from "weather-icons-react";
+import {WiNightFog} from "weather-icons-react";
+
 
 export default function WeatherIcon(props){
-    const codeMapping = {
-        "01d":"CLEAR_DAY",
-        "01n":"CLEAR_NIGHT",
-        "02d":"PARTLY-CLOUDY",
-        "02n":"PARTLY-CLOUDY",
-        "03d":"PARTLY-CLOUDY",
-        "03n":"PARTLY-CLOUDY",
-        "04d":"CLOUDY",
-        "04n":"CLOUDY",
-        "09d":"RAIN",
-        "09n":"RAIN",
-        "10d":"RAIN",
-        "10n":"RAIN",
-        "11d":"RAIN",
-        "11n":"RAIN",
-        "13d":"SNOW",
-        "13n":"SNOW",
-        "50d":"FOG",
-        "50n":"FOG",
-    };
-
+  if (props.code === "01d"){
     return (
-         <ReactAnimatedWeather
-    icon= {codeMapping[props.code]}
-    color="red"
-    size= {60}
-    animate= {true}
-  />
+         <WiDaySunny size={80} color='#00587A' />
     );
+  } else if (props.code === "01n") {
+    return(
+    <WiNightClear size={80} color='#00587A' />
+    );
+  } else if (props.code === "02d") {
+    return(
+    <WiDayCloudy size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "02n") {
+    return(
+    <WiNightAltCloudy size={80} color='#00587A' />
+    );
+  } else if (props.code === "03d") {
+    return(
+    <WiCloud size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "03n") {
+    return(
+    <WiCloud size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "04d") {
+    return(
+    <WiCloudy size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "04n") {
+    return(
+    <WiCloudy size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "09d") {
+    return(
+    <WiDayShowers size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "09n") {
+    return(
+    <WiNightAltShowers size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "10d") {
+    return(
+    <WiDayRain size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "10n") {
+    return(
+    <WiNightAltRain size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "11d") {
+    return(
+    <WiDayThunderstorm size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "11n") {
+    return(
+    <WiNightAltThunderstorm size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "13d") {
+    return(
+    <WiDaySnow size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "13n") {
+    return(
+    <WiNightAltSnow size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "50d") {
+    return(
+    <WiDayFog size={80} color='#00587A' />
+    );
+  }
+  else if (props.code === "50n") {
+    return(
+    <WiNightFog size={80} color='#00587A' />
+    );
+  }
 }
-

@@ -1,6 +1,8 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import { WiSunrise } from "weather-icons-react";
+import { WiSunset } from "weather-icons-react";
 import WeatherTemperature from "./WeatherTemperature";
 import "./WeatherInfo.css";
 
@@ -39,10 +41,10 @@ export default function WeatherInfo(props) {
           </div>
               <div className="row sunTime">
                   <div className="col-6">
-                      Sunrise: {new Date (props.data.sunrise * 1000).getHours()}:{new Date (props.data.sunrise * 1000).getMinutes()}
+                      <WiSunrise size={80} color='yellow' /> {new Date (props.data.sunrise * 1000).getHours()}:{new Date (props.data.sunrise * 1000).getMinutes()}
                   </div>
                 <div className="col-6">
-                      Sunset: {new Date (props.data.sunset * 1000).getHours()}:{new Date (props.data.sunset * 1000).getMinutes()}
+                      <WiSunset size={80} color='yellow' /> {new Date (props.data.sunset * 1000).getHours()}:{new Date (props.data.sunset * 1000).getMinutes()}
                   </div>
               </div>    
       </div>
