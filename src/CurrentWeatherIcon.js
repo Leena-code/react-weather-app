@@ -17,92 +17,92 @@ import { WiDayFog} from "weather-icons-react";
 import {WiNightFog} from "weather-icons-react";
 
 
-export default function WeatherIcon(props){
+export default function CurretWeatherIcon(props){
   if (props.code === "01d"){
     return (
-         <WiDaySunny size={80} color='#0f3057' />
+         <WiDaySunny size={140} color='#0f3057' />
     );
   } else if (props.code === "01n") {
     return(
-    <WiNightClear size={80} color='#0f3057' />
+    <WiNightClear size={140} color='#0f3057' />
     );
   } else if (props.code === "02d") {
     return(
-    <WiDayCloudy size={80} color='#0f3057' />
+    <WiDayCloudy size={140} color='#0f3057' />
     );
   }
   else if (props.code === "02n") {
     return(
-    <WiNightAltCloudy size={80} color='#0f3057' />
+    <WiNightAltCloudy size={140} color='#0f3057' />
     );
   } else if (props.code === "03d") {
     return(
-    <WiCloud size={80} color='#0f3057' />
+    <WiCloud size={140} color='#0f3057' />
     );
   }
   else if (props.code === "03n") {
     return(
-    <WiCloud size={80} color='#0f3057' />
+    <WiCloud size={140} color='#0f3057' />
     );
   }
   else if (props.code === "04d") {
     return(
-    <WiCloudy size={80} color='#0f3057' />
+    <WiCloudy size={140} color='#0f3057' />
     );
   }
   else if (props.code === "04n") {
     return(
-    <WiCloudy size={80} color='#0f3057' />
+    <WiCloudy size={140} color='#0f3057' />
     );
   }
   else if (props.code === "09d") {
     return(
-    <WiDayShowers size={80} color='#0f3057' />
+    <WiDayShowers size={140} color='#0f3057' />
     );
   }
   else if (props.code === "09n") {
     return(
-    <WiNightAltShowers size={80} color='#0f3057' />
+    <WiNightAltShowers size={140} color='#0f3057' />
     );
   }
   else if (props.code === "10d") {
     return(
-    <WiDayRain size={80} color='#0f3057' />
+    <WiDayRain size={140} color='#0f3057' />
     );
   }
   else if (props.code === "10n") {
     return(
-    <WiNightAltRain size={80} color='#0f3057' />
+    <WiNightAltRain size={140} color='#0f3057' />
     );
   }
   else if (props.code === "11d") {
     return(
-    <WiDayThunderstorm size={80} color='#0f3057' />
+    <WiDayThunderstorm size={140} color='#0f3057' />
     );
   }
   else if (props.code === "11n") {
     return(
-    <WiNightAltThunderstorm size={80} color='#0f3057' />
+    <WiNightAltThunderstorm size={200} color='#0f3057' />
     );
   }
   else if (props.code === "13d") {
     return(
-    <WiDaySnow size={80} color='#0f3057' />
+    <WiDaySnow size={200} color='#0f3057' />
     );
   }
   else if (props.code === "13n") {
     return(
-    <WiNightAltSnow size={80} color='#0f3057' />
+    <WiNightAltSnow size={200} color='#0f3057' />
     );
   }
   else if (props.code === "50d") {
     return(
-    <WiDayFog size={80} color='#0f3057' />
+    <WiDayFog size={200} color='#0f3057' />
     );
   }
   else if (props.code === "50n") {
     return(
-    <WiNightFog size={80} color='#0f3057' />
+    <WiNightFog size={200} color='#0f3057' />
     );
   }
 }

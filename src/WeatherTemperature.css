@@ -1,14 +1,18 @@
 span.temperature {
-  color: #ffe3de;
+  color: white;
   font-size: 80px;
   line-height: 64px;
   margin-left: 10px;
 }
 
 .unit {
-  color: #ffe3de;
+  color: white;
   font-size: 25px;
   position: relative;
   top: -43px;
   margin-left: 5px;
+}
+
+.WeatherTemperature a {
+  color: #0f3057;
 }

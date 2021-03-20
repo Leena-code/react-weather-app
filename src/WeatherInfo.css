@@ -1,25 +1,34 @@
 .weatherInfo h1 {
   font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
   margin: 0px;
   padding: 0px;
 }
 
 .weatherInfo h2 {
   font-size: 20px;
+  text-align: center;
   line-height: normal;
+  font-weight: bolder;
 }
 
 .weatherInfo h3 {
   font-size: 30px;
 }
 
-.weatherInfo canvas {
+span.float-left {
+  margin-left: 35px;
+}
+
+.weatherInfo svg {
   display: inline-block;
 }
 
 .weatherInfo ul {
   padding: 0px;
   margin: 0px;
+  margin-top: 30px;
 }
 
 .weatherInfo li {
@@ -32,27 +41,47 @@
 }
 
 .city {
-  margin-top: 30px;
-  padding-left: 10px;
+  margin-top: 50px;
 }
 
 .weatherData {
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-left: 50px;
   padding-left: 10px;
   padding-top: 10px;
 }
 
-.WeatherTemperature{
+.WeatherTemperature {
   display: inline-block;
 }
 
-
-.weatherDescription {
+span.weatherDescription {
   color: #0f3057;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bolder;
+  text-align: center;
+  margin-left: 60px;
 }
 
-.sunTime{
-  color: yellow;
+.weatherDataDetail {
+  margin-bottom: 50px;
+  margin-left: 65px;
+  padding-left: 10px;
+}
+
+.sunTime {
+  text-align: center;
+  color: #ff8c00;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.sunrise {
+  margin-right: 15px;
+}
+
+.weatherDescriptionDetail {
+  margin-left: 80px;
 }
