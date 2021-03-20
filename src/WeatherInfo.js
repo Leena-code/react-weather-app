@@ -33,10 +33,10 @@ export default function WeatherInfo(props) {
                   <div className="col-5 sunTime">
                     <div className="row">
                       <div className="col-4 sunrise">
-                    <WiSunrise size={60} color='#ff8c00' /> <FormattedSunTime suntime= {props.data.sunrise} />
+                    <WiSunrise size={60} color='#F48024' /> <FormattedSunTime suntime= {props.data.sunrise} />
                     </div>
                     <div className="col-4">
-                  <WiSunset size={60} color='#ff8c00' /> <FormattedSunTime suntime= {props.data.sunset} />
+                  <WiSunset size={60} color='#F48024' /> <FormattedSunTime suntime= {props.data.sunset} />
                   </div>
                   </div>
                   </div>

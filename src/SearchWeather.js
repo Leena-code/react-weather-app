@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
@@ -72,7 +74,10 @@ export default function SearchWeather(props){
           />
           </div>
           <div className="col-3">
-          <input type="submit" value="🔎" className="form-control submit-box shadow-none" />
+          <button type="submit" className="form-control submit-box shadow-none">
+            <FontAwesomeIcon icon={faSearch} className="fontAwesomeIcon"/>
+          </button>
+          
           </div>
           </div>
         </form>

@@ -4,12 +4,16 @@ form {
   border-radius: 4px;
 }
 
-form .form-control{
+form .form-control {
   border: none;
 }
 
 form .form-control:focus {
   outline: none;
+}
+
+.fontAwesomeIcon {
+  color: #0f3057;
 }
 
 .submit-box {
