@@ -22,11 +22,11 @@ export default function WeatherInfo(props) {
                  <span className="float-left">
               <CurrentWeatherIcon code={props.data.icon}/>
               <WeatherTemperature celsius={props.data.temperature}/>
-               <span className="weatherDescription">
-                 broken clouds
-                 </span>
              </span>
               </div>
+              <span className="weatherDescription">
+                 {props.data.description}
+                 </span>
               </div>
           </div>
               <div className="row weatherDataDetail">
