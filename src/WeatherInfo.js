@@ -1,7 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import FormattedSunTime from "./FormattedSunTime";
-import WeatherIcon from "./WeatherIcon";
 import CurrentWeatherIcon from "./CurrentWeatherIcon";
 import { WiSunrise } from "weather-icons-react";
 import { WiSunset } from "weather-icons-react";
@@ -12,7 +11,7 @@ export default function WeatherInfo(props) {
     return (
         <div className="weatherInfo">
             <div className="row weather mt-5 mb-4">
-                <div className="col-4 city">
+                <div className="col-5 city">
            <h1>{props.data.city}, {props.data.country}</h1>
               <h2>
                   <FormattedDate date= {props.data.date} />
@@ -47,10 +46,10 @@ export default function WeatherInfo(props) {
                 Humidity: {props.data.humidity} %
               </li>
               <li>
-                Wind: {props.data.wind} km/h
+                Wind: {Math.round(props.data.wind)} km/h
               </li>
               <li>
-                Feels like: {Math.round(props.data.feelsLike)}°C
+                Feels like: {Math.round(props.data.feelsLike)} °C
               </li>
               </ul>
                   </div>

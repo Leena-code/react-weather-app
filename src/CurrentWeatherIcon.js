@@ -20,64 +20,64 @@ import {WiNightFog} from "weather-icons-react";
 export default function CurretWeatherIcon(props){
   if (props.code === "01d"){
     return (
-         <WiDaySunny size={140} color='#0f3057' />
+         <WiDaySunny size={110} color='#0f3057' />
     );
   } else if (props.code === "01n") {
     return(
-    <WiNightClear size={140} color='#0f3057' />
+    <WiNightClear size={110} color='#0f3057' />
     );
   } else if (props.code === "02d") {
     return(
-    <WiDayCloudy size={140} color='#0f3057' />
+    <WiDayCloudy size={110} color='#0f3057' />
     );
   }
   else if (props.code === "02n") {
     return(
-    <WiNightAltCloudy size={140} color='#0f3057' />
+    <WiNightAltCloudy size={110} color='#0f3057' />
     );
   } else if (props.code === "03d") {
     return(
-    <WiCloud size={140} color='#0f3057' />
+    <WiCloud size={110} color='#0f3057' />
     );
   }
   else if (props.code === "03n") {
     return(
-    <WiCloud size={140} color='#0f3057' />
+    <WiCloud size={110} color='#0f3057' />
     );
   }
   else if (props.code === "04d") {
     return(
-    <WiCloudy size={140} color='#0f3057' />
+    <WiCloudy size={110} color='#0f3057' />
     );
   }
   else if (props.code === "04n") {
     return(
-    <WiCloudy size={140} color='#0f3057' />
+    <WiCloudy size={110} color='#0f3057' />
     );
   }
   else if (props.code === "09d") {
     return(
-    <WiDayShowers size={140} color='#0f3057' />
+    <WiDayShowers size={110} color='#0f3057' />
     );
   }
   else if (props.code === "09n") {
     return(
-    <WiNightAltShowers size={140} color='#0f3057' />
+    <WiNightAltShowers size={110} color='#0f3057' />
     );
   }
   else if (props.code === "10d") {
     return(
-    <WiDayRain size={140} color='#0f3057' />
+    <WiDayRain size={110} color='#0f3057' />
     );
   }
   else if (props.code === "10n") {
     return(
-    <WiNightAltRain size={140} color='#0f3057' />
+    <WiNightAltRain size={110} color='#0f3057' />
     );
   }
   else if (props.code === "11d") {
     return(
-    <WiDayThunderstorm size={140} color='#0f3057' />
+    <WiDayThunderstorm size={110} color='#0f3057' />
     );
   }
   else if (props.code === "11n") {

@@ -1,16 +1,15 @@
 .weatherInfo h1 {
   font-size: 30px;
   font-weight: bolder;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
+  margin-left: 15px;
 }
 
 .weatherInfo h2 {
   font-size: 20px;
-  text-align: center;
   line-height: normal;
   font-weight: bolder;
+  margin-top: 30px;
+  margin-left: 15px;
 }
 
 .weatherInfo h3 {
@@ -18,7 +17,7 @@
 }
 
 span.float-left {
-  margin-left: 35px;
+  margin-left: 5px;
 }
 
 .weatherInfo svg {
@@ -46,8 +45,6 @@ span.float-left {
 
 .weatherData {
   margin-top: 25px;
-  margin-left: 50px;
-  padding-left: 10px;
   padding-top: 10px;
 }
 
@@ -64,7 +61,7 @@ span.weatherDescription {
 }
 
 .weatherDataDetail {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   margin-left: 65px;
   padding-left: 10px;
 }
@@ -75,7 +72,6 @@ span.weatherDescription {
   font-size: 17px;
   font-weight: bolder;
   margin-top: 30px;
-  margin-left: 10px;
 }
 
 .sunrise {

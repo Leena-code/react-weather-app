@@ -26,6 +26,19 @@ export default function SearchWeather(props){
     });
   }
 
+  function showPosition (position) {
+    let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  const apiKey = "806f99d0661b04444ade3ca9ef0a7b55";
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+  }
+
+   function getCurrentPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+  }
+
   function search (){
    const apiKey = "806f99d0661b04444ade3ca9ef0a7b55";
    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -65,7 +78,7 @@ export default function SearchWeather(props){
         </form>
         </div>
         <div className="col-4">
-        <button className="current-location-button">Current Location</button>
+        <button className="current-location-button" onClick={getCurrentPosition}>Current Location</button>
         </div>
         </div>
         <WeatherInfo data={weatherData}/>
