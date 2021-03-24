@@ -4,6 +4,12 @@
   margin-left: 15px;
 }
 
+@media (max-height: 500px) {
+  .weatherInfo h1 {
+    font-size: 20px;
+  }
+}
+
 .weatherInfo h2 {
   font-size: 20px;
   line-height: normal;
@@ -12,16 +18,38 @@
   margin-left: 15px;
 }
 
+@media (max-height: 500px) {
+  .weatherInfo h2 {
+    font-size: 15px;
+  }
+}
+
 .weatherInfo h3 {
   font-size: 30px;
+}
+
+@media (max-height: 500px) {
+  .weatherInfo h3 {
+    font-size: 20px;
+  }
 }
 
 span.float-left {
   margin-left: 5px;
 }
 
-.weatherInfo svg {
-  display: inline-block;
+@media (max-height: 500px) {
+  .clearfix {
+    max-width: 190%;
+    height: auto;
+  }
+}
+
+@media (max-height: 500px) {
+  svg {
+    max-width: 190%;
+    height: auto;
+  }
 }
 
 .weatherInfo ul {
@@ -37,6 +65,12 @@ span.float-left {
   margin: 0;
   padding: 0;
   line-height: 2;
+}
+
+@media (max-height: 500px) {
+  .weatherInfo li {
+    font-size: 10px;
+  }
 }
 
 .city {
@@ -60,6 +94,12 @@ span.weatherDescription {
   margin-left: 60px;
 }
 
+@media (max-height: 500px) {
+  span.weatherDescription {
+    font-size: 15px;
+  }
+}
+
 .weatherDataDetail {
   margin-bottom: 60px;
   padding-left: 10px;
@@ -67,10 +107,16 @@ span.weatherDescription {
 
 .sunTime {
   text-align: center;
-  color: #ea6e4b;
+  color: #0f3057;
   font-size: 17px;
   font-weight: bolder;
   margin-top: 30px;
+}
+
+@media (max-height: 500px) {
+  .sunTime {
+    font-size: 10px;
+  }
 }
 
 .sunrise {

@@ -17,6 +17,7 @@ import { WiDayFog} from "weather-icons-react";
 import {WiNightFog} from "weather-icons-react";
 
 
+
 export default function CurretWeatherIcon(props){
   if (props.code === "01d"){
     return (
