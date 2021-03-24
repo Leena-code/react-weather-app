@@ -5,23 +5,10 @@ span.temperature {
   margin-left: 10px;
 }
 
-@media (max-height: 500px) {
-  span.temperature {
-    font-size: 40px;
-  }
-}
-
 .unit {
   color: white;
   font-size: 25px;
   position: relative;
   top: -43px;
   margin-left: 5px;
-}
-
-@media (max-height: 500px) {
-  .unit {
-    font-size: 13px;
-    top: -25px;
-  }
 }
