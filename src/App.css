@@ -10,11 +10,6 @@ footer {
   margin: 10px;
   font-size: 20px;
 }
-@media (max-height: 500px) {
-  footer {
-    font-size: 5px;
-  }
-}
 
 .App a {
   text-decoration: none;
@@ -29,12 +24,6 @@ footer {
   max-width: 800px;
   background: linear-gradient(40deg, #00ad9f, turquoise, #f48024, #f48024);
   background-size: 1600px;
-}
-
-@media (max-height: 500px) {
-  .App {
-    background-size: 1000px;
-  }
 }
 
 .weather-app-wrapper {
