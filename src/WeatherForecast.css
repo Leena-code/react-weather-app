@@ -4,7 +4,20 @@
   font-weight: bolder;
 }
 
+@media (max-height: 500px) {
+  .WeatherForecast {
+    font-size: 10px;
+  }
+}
+
 .WeatherForecast svg {
   display: block;
   margin: 5px auto;
+}
+
+@media (max-height: 500px) {
+  .WeatherForecast svg {
+    max-width: 100%;
+    height: auto;
+  }
 }

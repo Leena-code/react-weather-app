@@ -4,12 +4,26 @@ form {
   border-radius: 4px;
 }
 
+@media (max-height: 500px) {
+  form {
+    width: 200px;
+    height: 30px;
+  }
+}
+
 form .form-control {
   border: none;
 }
 
 form .form-control:focus {
   outline: none;
+}
+
+@media (max-height: 500px) {
+  form .form-control {
+    height: 20px;
+    font-size: 10px;
+  }
 }
 
 .fontAwesomeIcon {
@@ -20,6 +34,13 @@ form .form-control:focus {
   background-color: white;
   border: none;
   margin-left: 90px;
+}
+
+@media (max-height: 500px) {
+  .submit-box {
+    margin-left: 30px;
+    background-color: none;
+  }
 }
 
 .submit-box:hover {
@@ -42,6 +63,13 @@ form .form-control:focus {
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (max-height: 500px) {
+  .current-location-button {
+    font-size: 10px;
+    padding: none;
+  }
 }
 
 .current-location-button:hover {
