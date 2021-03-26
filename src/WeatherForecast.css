@@ -4,7 +4,7 @@
   font-weight: bolder;
 }
 
-@media (max-height: 500px) {
+@media (max-width: 768px) {
   .WeatherForecast {
     font-size: 10px;
   }
@@ -15,7 +15,7 @@
   margin: 5px auto;
 }
 
-@media (max-height: 500px) {
+@media (max-width: 768px) {
   .WeatherForecast svg {
     max-width: 100%;
     height: auto;

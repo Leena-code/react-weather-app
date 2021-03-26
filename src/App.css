@@ -11,9 +11,9 @@ footer {
   font-size: 20px;
 }
 
-@media (max-height: 500px) {
+@media (max-width: 768px) {
   footer {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -32,9 +32,10 @@ footer {
   background-size: 1600px;
 }
 
-@media (max-height: 500px) {
+@media (max-width: 768px) {
   .App {
     background-size: 1000px;
+    padding: 30px 30px 50px 30px;
   }
 }
 

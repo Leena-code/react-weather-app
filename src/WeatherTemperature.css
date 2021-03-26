@@ -5,7 +5,7 @@ span.temperature {
   margin-left: 10px;
 }
 
-@media (max-height: 500px) {
+@media (max-width: 768px) {
   span.temperature {
     font-size: 40px;
   }
@@ -19,7 +19,7 @@ span.temperature {
   margin-left: 5px;
 }
 
-@media (max-height: 500px) {
+@media (max-width: 768px) {
   .unit {
     font-size: 13px;
     top: -25px;
