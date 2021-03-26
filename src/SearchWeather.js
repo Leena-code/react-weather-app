@@ -67,7 +67,7 @@ export default function SearchWeather(props){
           <div className="col-6">
           <input
             type="search"
-            placeholder="Enter a city..."
+            placeholder="Enter city"
             className="form-control search-box shadow-none"
             autoComplete="off"
             onChange= {handleCityChange}
