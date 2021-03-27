@@ -19,14 +19,14 @@ footer {
 
 .App a {
   text-decoration: none;
-  color: #0f3057;
+  color: blue;
   font-weight: bolder;
 }
 
 .App {
   border: 1.5px solid #0f3057;
   border-radius: 10px;
-  padding: 50px 50px 70px 50px;
+  padding: 40px 40px 60px 40px;
   max-width: 800px;
   background: linear-gradient(40deg, #00ad9f, turquoise, #f48024, #f48024);
   background-size: 1600px;
@@ -35,7 +35,7 @@ footer {
 @media (max-width: 768px) {
   .App {
     background-size: 1000px;
-    padding: 30px 30px 50px 30px;
+    padding: 20px 20px 30px 20px;
   }
 }
 

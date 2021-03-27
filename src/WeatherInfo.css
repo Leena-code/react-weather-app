@@ -1,3 +1,15 @@
+.weather {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .weather {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+}
+
 .weatherInfo h1 {
   font-size: 30px;
   font-weight: bolder;
@@ -64,7 +76,7 @@ span.float-left {
 
 @media (max-width: 768px) {
   .weatherInfo li {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -92,13 +104,19 @@ span.weatherDescription {
 @media (max-width: 768px) {
   span.weatherDescription {
     font-size: 13px;
-    margin-left: 60px;
+    margin-left: 30px;
   }
 }
 
 .weatherDataDetail {
   margin-bottom: 60px;
   padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .weatherDataDetail {
+    margin-bottom: 35px;
+  }
 }
 
 .sunTime {
@@ -111,20 +129,6 @@ span.weatherDescription {
 
 @media (max-width: 768px) {
   .sunTime {
-    font-size: 10px;
-  }
-}
-
-.sunrise {
-  margin-right: 5px;
-}
-
-.weatherDescriptionDetail {
-  margin-left: 60px;
-}
-
-@media (max-width: 768px) {
-  .weatherDescriptionDetail {
-    margin-left: 20px;
+    font-size: 12px;
   }
 }

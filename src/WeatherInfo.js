@@ -10,14 +10,14 @@ import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
     return (
         <div className="weatherInfo">
-            <div className="row weather mt-5 mb-4">
-                <div className="col-5 city">
+            <div className="row weather">
+                <div className="col-6 city">
            <h1>{props.data.city}, {props.data.country}</h1>
               <h2>
                   <FormattedDate date= {props.data.date} />
               </h2>
               </div>
-          <div className="col-7 weatherData">
+          <div className="col-6 weatherData">
               <div className="clearfix">
                  <span className="float-left">
                    <span className= "CurrentWeatherIcon">
@@ -32,17 +32,17 @@ export default function WeatherInfo(props) {
               </div>
           </div>
               <div className="row weatherDataDetail">
-                  <div className="col-5 sunTime">
+                  <div className="col-7 sunTime">
                     <div className="row">
-                      <div className="col-4 sunrise">
+                      <div className="col-3 sunrise">
                     <WiSunrise size={60} color='#F48024' /> <FormattedSunTime suntime= {props.data.sunrise} />
                     </div>
-                    <div className="col-4">
+                    <div className="col-3">
                   <WiSunset size={60} color='#F48024' /> <FormattedSunTime suntime= {props.data.sunset} />
                   </div>
                   </div>
                   </div>
-                <div className="col-4 weatherDescriptionDetail">
+                <div className="col-5 weatherDescriptionDetail">
                   <ul>
               <li>
                 Humidity: {props.data.humidity} %
