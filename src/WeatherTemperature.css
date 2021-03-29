@@ -7,7 +7,7 @@ span.temperature {
 
 @media (max-width: 768px) {
   span.temperature {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 
@@ -21,7 +21,7 @@ span.temperature {
 
 @media (max-width: 768px) {
   .unit {
-    font-size: 13px;
+    font-size: 15px;
     top: -25px;
   }
 }

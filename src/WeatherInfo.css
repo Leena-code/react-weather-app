@@ -53,7 +53,7 @@ span.float-left {
 }
 
 @media (max-width: 768px) {
-  svg {
+  .currentWeatherIcon svg {
     max-width: 100%;
     height: auto;
   }
@@ -130,5 +130,12 @@ span.weatherDescription {
 @media (max-width: 768px) {
   .sunTime {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sunTime svg {
+    max-width: 100%;
+    height: auto;
   }
 }
