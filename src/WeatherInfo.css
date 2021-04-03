@@ -131,7 +131,7 @@ span.weatherDescription {
 @media (max-width: 768px) {
   .sunTime {
     font-size: 12px;
-    margin-left: 0px;
+    margin-left: 15px;
   }
 }
 
@@ -148,6 +148,6 @@ span.weatherDescription {
 
 @media (max-width: 768px) {
   .weatherDescriptionDetail {
-    margin-left: 14px;
+    margin-left: 0px;
   }
 }

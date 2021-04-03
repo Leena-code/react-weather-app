@@ -35,7 +35,7 @@ footer {
 @media (max-width: 768px) {
   .App {
     background-size: 1000px;
-    padding: 20px 20px 30px 20px;
+    padding: 20px 10px 20px 10px;
   }
 }
 
