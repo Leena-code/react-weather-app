@@ -11,13 +11,13 @@ export default function WeatherInfo(props) {
     return (
         <div className="weatherInfo">
             <div className="row weather">
-                <div className="col-6 city">
+                <div className="col-6 city pl-0 pr-0">
            <h1>{props.data.city}, {props.data.country}</h1>
               <h2>
                   <FormattedDate date= {props.data.date} />
               </h2>
               </div>
-          <div className="col-6 weatherData">
+          <div className="col-6 weatherData pl-0 pr-0">
               <div className="clearfix">
                  <span className="float-left">
                    <span className= "currentWeatherIcon">
@@ -32,12 +32,12 @@ export default function WeatherInfo(props) {
               </div>
           </div>
               <div className="row weatherDataDetail">
-                  <div className="col-7 sunTime">
+                  <div className="col-6 sunTime">
                     <div className="row">
-                      <div className="col-3 sunrise">
+                      <div className="col-3 sunrise pl-0 pr-0">
                     <WiSunrise size={60} color='#F48024' /> <FormattedSunTime suntime= {props.data.sunrise} />
                     </div>
-                    <div className="col-3">
+                    <div className="col-3 pl-0 pr-0">
                   <WiSunset size={60} color='#F48024' /> <FormattedSunTime suntime= {props.data.sunset} />
                   </div>
                   </div>

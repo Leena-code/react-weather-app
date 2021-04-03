@@ -2,6 +2,7 @@ form {
   background-color: white;
   border: 1.5px solid #0f3057;
   border-radius: 4px;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -26,21 +27,9 @@ form .form-control:focus {
   }
 }
 
-.fontAwesomeIcon {
-  color: #0f3057;
-}
-
-@media (max-width: 768px) {
-  svg {
-    max-width: 300%;
-    height: auto;
-  }
-}
-
 .submit-box {
   background-color: white;
   border: none;
-  margin-left: 90px;
 }
 
 @media (max-width: 768px) {
@@ -54,6 +43,17 @@ form .form-control:focus {
   cursor: pointer;
 }
 
+.fontAwesomeIcon {
+  color: #0f3057;
+}
+
+@media (max-width: 768px) {
+  svg {
+    max-width: 300%;
+    height: auto;
+  }
+}
+
 .current-location-button {
   display: inline-block;
   color: white;
@@ -64,7 +64,7 @@ form .form-control:focus {
   background-color: #0f3057;
   border: 1px solid transparent;
   padding: 10px 15px;
-  margin-left: 40px;
+  margin-left: 50px;
   font-size: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   text-decoration: none;

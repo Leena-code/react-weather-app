@@ -61,10 +61,10 @@ export default function SearchWeather(props){
     return(
       <div>
         <div className="row">
-          <div className="col-7">
+          <div className="col-6">
         <form onSubmit={handleSubmit}>
           <div className="row">
-          <div className="col-6">
+          <div className="col-9">
           <input
             type="search"
             placeholder="Enter city"
