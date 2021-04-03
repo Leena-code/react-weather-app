@@ -148,6 +148,6 @@ span.weatherDescription {
 
 @media (max-width: 768px) {
   .weatherDescriptionDetail {
-    margin-left: 0px;
+    margin-left: 5px;
   }
 }
