@@ -11,13 +11,13 @@ export default function WeatherInfo(props) {
     return (
         <div className="weatherInfo">
             <div className="row weather">
-                <div className="col-5 city pl-0 pr-0">
+                <div className="col-6 city pl-0 pr-0">
            <h1>{props.data.city}, {props.data.country}</h1>
               <h2>
                   <FormattedDate date= {props.data.date} />
               </h2>
               </div>
-          <div className="col-7 weatherData pl-0 pr-0">
+          <div className="col-6 weatherData pl-0 pr-0">
               <div className="clearfix">
                  <span className="float-left">
                    <span className= "currentWeatherIcon">
