@@ -17,7 +17,7 @@ export default function WeatherInfo(props) {
                   <FormattedDate date= {props.data.date} />
               </h2>
               </div>
-          <div className="col-6 weatherData pr-0">
+          <div className="col-6 weatherData pl-20 pr-0">
               <div className="clearfix">
                  <span className="float-left">
                    <span className= "currentWeatherIcon">
